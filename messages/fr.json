@@ -1,0 +1,367 @@
+{
+  "HomeMetadata": {
+    "title": "Accueil | Euro TV Pro",
+    "description": "Diffusez les meilleures ligues sportives, musique, films et séries TV sans limites.",
+    "keywords": "IPTV, streaming, sports, films, séries TV, divertissement",
+    "siteName": "Euro TV Pro"
+  },
+  "PlansMetadata": {
+    "title": "Abonnements IPTV | Choisissez Votre Plan",
+    "description": "Découvrez nos abonnements IPTV offrant plus de 18K chaînes live FHD et 100K VOD multilingue. Accès instantané, aucun matériel requis et compatible avec tous les appareils.",
+    "keywords": "IPTV, chaînes live, VOD, abonnement, FHD, 4K, streaming",
+    "author": "Euro TV Pro",
+    "siteName": "Euro TV Pro",
+    "ogTitle": "Abonnements IPTV - Choisissez Votre Plan",
+    "ogDescription": "Découvrez nos abonnements IPTV offrant plus de 18K chaînes live FHD et 100K VOD multilingue.",
+    "ogType": "website",
+    "ogUrl": "https://yourwebsite.com",
+    "ogImage": "https://yourwebsite.com/image.png"
+  },
+  "ContactMetadata": {
+    "title": "Contactez-nous - Euro TV Pro",
+    "description": "Contactez-nous pour toute question ou support. Nous sommes là pour vous aider !",
+    "keywords": "contact, support, aide, demande, Euro TV Pro",
+    "author": "Euro TV Pro",
+    "siteName": "Euro TV Pro",
+    "ogTitle": "Contactez-nous - Euro TV Pro",
+    "ogDescription": "Contactez-nous pour toute question ou support. Nous sommes là pour vous aider !",
+    "ogType": "website",
+    "ogUrl": "https://yourwebsite.com/contact",
+    "ogImage": "https://yourwebsite.com/images/og-image.jpg"
+  },
+  "AboutMetadata": {
+    "title": "À propos de nous - Euro TV Pro",
+    "description": "Découvrez notre mission, notre vision et nos valeurs. Découvrez ce qui nous rend unique !",
+    "keywords": "à propos, mission, vision, valeurs, Euro TV Pro",
+    "author": "Euro TV Pro",
+    "siteName": "Euro TV Pro",
+    "ogTitle": "À propos de nous - Euro TV Pro",
+    "ogDescription": "Découvrez notre mission, notre vision et nos valeurs. Découvrez ce qui nous rend unique !",
+    "ogType": "website",
+    "ogUrl": "https://yourwebsite.com/about",
+    "ogImage": "https://yourwebsite.com/images/og-image.jpg"
+  },
+  "BlogMetadata": {
+    "title": "Blog - Euro TV Pro",
+    "description": "Découvrez nos derniers articles de blog sur l'IPTV, le streaming et le divertissement. Restez informé des dernières tendances et astuces !",
+    "keywords": "blog, IPTV, streaming, divertissement, Euro TV Pro",
+    "author": "Euro TV Pro",
+    "siteName": "Euro TV Pro",
+    "ogTitle": "Blog - Euro TV Pro",
+    "ogDescription": "Découvrez nos derniers articles de blog sur l'IPTV, le streaming et le divertissement. Restez informé des dernières tendances et astuces !",
+    "ogType": "website",
+    "ogUrl": "https://eurotvpro.com/blog",
+    "ogImage": "https://eurotvpro.com/images/og-image.jpg"
+  },
+  "Home": {
+    "HeroSection": {
+      "offer": "Vous offrez une",
+      "entertainment": "Expérience",
+      "experience": "Exceptionnelle",
+      "startingFrom": "À partir de",
+      "month": "par mois",
+      "shopNow": "Acheter maintenant"
+    },
+    "WhoWeAre": {
+      "title": "VOTRE SOURCE DE CONFIANCE POUR L’IPTV PREMIUM",
+      "description": "Dédié à offrir une expérience de streaming fluide et agréable, avec une large variété de chaînes, films et émissions du monde entier."
+    }
+  },
+  "StreamFeatures": {
+    "title": "STREAM SANS LIMITES",
+    "textTV": "Explorez des milliers de chaînes de différents pays.",
+    "textWifi": "Profitez d'une diffusion en haute définition sans interruption.",
+    "textFilm": "Accédez à une immense bibliothèque de films et d'émissions de télévision à la demande.",
+    "textMonitor": "Diffusez sur plusieurs appareils, n'importe où et à tout moment."
+  },
+  "EntertainmentCarousels": {
+    "sports": {
+      "title": "Les Meilleures Ligues et Événements Sportifs",
+      "description": "Restez à jour avec les dernières et les plus passionnantes ligues sportives, du football au basketball et bien plus encore."
+    },
+    "movies": {
+      "title": "Films Incontournables",
+      "description": "Découvrez des films emblématiques qui ont marqué l'histoire du cinéma. Des classiques intemporels aux chefs-d'œuvre modernes."
+    },
+    "shows": {
+      "title": "Séries TV à Regarder Absolument",
+      "description": "Explorez les séries TV les plus populaires dont tout le monde parle. Drame, thriller ou comédie—il y en a pour tous les goûts."
+    }
+  },
+  "WhatWeOffer": {
+    "title": "CE QUE NOUS OFFRONS",
+    "text": "Nous proposons plus de 18 000 chaînes FHD en direct et plus de 100 000 vidéos à la demande dans plusieurs langues. Profitez du streaming en qualité 8K, 4K et FHD sur n'importe quel appareil, avec un accès instantané, des mises à jour quotidiennes et une assistance 24h/24 et 7j/7—aucun matériel requis !"
+  },
+  "plans": {
+    "title": "NOS ABONNEMENTS",
+    "add_to_cart": "Ajouter au panier",
+    "place_order": "Passer la commande",
+    "durations": {
+      "1_month": "1 MOIS",
+      "6_months": "6 MOIS",
+      "12_months1": "12 MOIS (1 Accès)",
+      "12_months2": "12 MOIS (2 Accès)"
+    },
+    "features": {
+      "live_channels": "+18K chaînes en direct FHD",
+      "vod": "+100K VOD multilingue",
+      "quality": "Qualité 8K, 4k et FHD",
+      "instant_access": "Accès instantané",
+      "no_hardware": "Pas de matériel nécessaire",
+      "all_devices": "Tous les appareils supportés",
+      "daily_update": "Mise à jour quotidienne",
+      "epg_guide": "Guide EPG",
+      "support": "Support 24/7",
+      "vip_instant_access": "Accès instantané VIP",
+      "vip_support": "Support VIP 24/7"
+    },
+    "orderPayment": "Paiement de la commande",
+    "personalInformation": "Informations personnelles",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "selectCountry": "Sélectionner le pays",
+    "phoneNumber": "Numéro de téléphone",
+    "email": "Email",
+    "paymentMethodval": "Mode de paiement",
+    "selectPaymentMethod": "Sélectionner le mode de paiement",
+    "orderDetailsval": "Détails de la commande",
+    "orderTotal": "Total de la commande",
+    "placeOrder": "Passer la commande",
+    "required": "Ce champ est obligatoire",
+    "invalidPhone": "Numéro de téléphone invalide",
+    "invalidEmail": "Adresse email invalide",
+    "processing": "En cours de traitement...",
+    "orderSuccessful": "Commande passée avec succès !",
+    "orderFailed": "Échec de la commande. Veuillez réessayer.",
+    "yourCart": "Votre panier",
+    "emptyCart": "Votre panier est vide",
+    "shippingDetails": "Détails de l'expédition",
+    "country": "Pays",
+    "paymentMethod": "Méthode de paiement",
+    "best_value": "Meilleure offre"
+  },
+  "reasons": {
+    "title": "DE BONNES RAISONS",
+    "make_you": "VOUS FONT ",
+    "choose_us": "NOUS CHOISIR",
+    "reasons_list": [
+      {
+        "title": "Prix Compétitifs",
+        "description": "Obtenez le meilleur rapport qualité-prix pour vos besoins de divertissement"
+      },
+      {
+        "title": "Large Gamme de Contenu",
+        "description": "Accédez à des milliers de chaînes et d'émissions"
+      },
+      {
+        "title": "Qualité de Streaming Exceptionnelle",
+        "description": "Profitez d'un contenu HD et 4K d'une clarté cristalline"
+      },
+      {
+        "title": "Mises à Jour Régulières",
+        "description": "Restez à jour avec le dernier contenu"
+      }
+    ]
+  },
+  "PathnamesPage": {
+    "title": "Pathnames",
+    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+  },
+  "LocaleLayout": {
+    "title": "EuroIPTV"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "Pricing": "Tarifs",
+    "Blog": "Blog",
+    "About": "À propos",
+    "Contact": "Contact",
+    "view_cart": "Voir le panier",
+    "open_cart": "Ouvrir le panier",
+    "open_main_menu": "Ouvrir le menu principal"
+  },
+  "Footer": {
+    "navigation": {
+      "home": "Accueil",
+      "pricing": "Tarifs",
+      "blog": "Blog",
+      "contact": "Contact",
+      "cart": "Panier"
+    },
+    "contact_info": {
+      "phone": "+33 7 45 022 308",
+      "email": "Email@gmail.com",
+      "address": "20 Av. de Wagram, 75008 Paris, France"
+    },
+    "copyright": "Copyright © {year}. Tous droits réservés."
+  },
+  "ContactForm": {
+    "title": "CONTACTEZ-NOUS",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "email": "Email",
+      "phone": "Numéro de téléphone (WhatsApp)",
+      "message": "Votre message",
+      "sendMessage": "Envoyer le message",
+      "errors": {
+        "firstName": "Le prénom est requis",
+        "lastName": "Le nom de famille est requis",
+        "email": "L'email est requis",
+        "invalidEmail": "Format d'email invalide",
+        "phone": "Le numéro de téléphone est requis",
+        "message": "Le message est requis"
+      }
+    },
+    "contactInfo": {
+      "title": "Informations de contact",
+      "description": "Dites quelque chose pour commencer un chat en direct !",
+      "phone": "+123 4567 890",
+      "email": "demo@gmail.com"
+    }
+  },
+  "HowItWorks": {
+    "title": "COMMENT ÇA MARCHE",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Sélectionnez un plan d'abonnement",
+        "description": "Parcourez nos plans d'abonnement et choisissez celui qui vous convient, offrant les chaînes, la durée et les fonctionnalités que vous souhaitez."
+      },
+      {
+        "number": "2",
+        "title": "Fournissez vos informations et paiement",
+        "description": "Vous devrez fournir des informations telles que votre nom et votre adresse e-mail. Choisissez un mode de paiement. Et payez !"
+      },
+      {
+        "number": "3",
+        "title": "Configurez votre appareil IPTV et profitez",
+        "description": "Vous devez simplement installer l'application compatible sur votre appareil. Connectez-vous à l'application pour accéder au service IPTV. Et enfin, profitez !"
+      }
+    ]
+  },
+  "CartPage": {
+    "title": "Paiement de la commande",
+    "personalInfo": {
+      "title": "Informations personnelles",
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "country": "Pays",
+      "phone": "Numéro de téléphone",
+      "email": "E-mail"
+    },
+    "paymentMethod": {
+      "title": "Méthode de paiement",
+      "select": "Sélectionnez un mode de paiement",
+      "card": "Carte de crédit",
+      "paypal": "PayPal"
+    },
+    "orderDetails": {
+      "title": "Détails de la commande",
+      "plan": "Plan",
+      "orderTotal": "Total de la commande :",
+      "placeOrder": "Passer la commande"
+    }
+  },
+  "About": {
+    "title": "À Propos",
+    "brand": "Euro TV Pro",
+    "description": "Découvrez notre parcours, nos valeurs et notre engagement à offrir la meilleure expérience IPTV.",
+    "imageAlt": "Service Euro TV Pro",
+    "story": {
+      "title": "Notre Histoire",
+      "p1": "Fondé avec une passion pour le divertissement, Euro TV Pro est devenu un fournisseur IPTV de confiance servant des clients dans le monde entier.",
+      "p2": "Nous croyons en la fourniture de services de streaming fiables et de haute qualité adaptés à toutes les préférences de visionnage, des amateurs de sport aux cinéphiles.",
+      "p3": "Notre objectif est d'innover et de nous développer, en veillant à ce que vous ayez accès aux dernières technologies et aux meilleures options de divertissement."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "global": "Accessibilité Mondiale",
+      "globalDescription": "Apporter du contenu premium aux téléspectateurs du monde entier, à tout moment, n'importe où.",
+      "quality": "Streaming Haute Qualité",
+      "qualityDescription": "Assurer un divertissement fluide et ininterrompu avec des options 4K et HD.",
+      "security": "Sécurité & Confidentialité",
+      "securityDescription": "Vos données et votre expérience de streaming sont toujours protégées avec des mesures de sécurité de premier ordre."
+    },
+    "mission": {
+      "title": "Notre Mission & Vision",
+      "description1": "Chez Euro TV Pro, notre mission est de révolutionner la façon dont les gens vivent le divertissement en fournissant des services IPTV fluides et fiables.",
+      "description2": "Nous imaginons un monde où le streaming de haute qualité est accessible à tous, améliorant ainsi la façon dont les gens se connectent au contenu mondial."
+    }
+  },
+  "NotificationSnackbar": {
+    "plans": {
+      "sixMonth": "6 mois",
+      "oneYear": "1 an",
+      "threeMonth": "3 mois"
+    },
+    "timeAgo": {
+      "minutes": "il y a {count} min",
+      "hours": "il y a {count} heure"
+    },
+    "notificationMessage": {
+      "part1": "s'est abonné(e) à un",
+      "part2": "forfait"
+    }
+  },
+  "blog": {
+    "title": "BLOG",
+    "subtitle": "En savoir plus sur l'IPTV",
+    "readMore": "Lire la suite",
+    "posts": {
+      "what-is-iptv": {
+        "title": "Qu'est-ce que l'IPTV ? Guide complet pour débutants",
+        "excerpt": "L'IPTV (télévision par protocole Internet) transforme notre façon de regarder la télévision en diffusant du contenu via Internet. Découvrez comment fonctionne l'IPTV, ses avantages et comment commencer."
+      },
+      "iptv-vs-normal-tv": {
+        "title": "IPTV vs Télévision classique : Lequel est le meilleur ?",
+        "excerpt": "Comparez l'IPTV et la télévision classique en termes de coûts, de contenu et de flexibilité. Découvrez pourquoi l'IPTV est l'avenir de la télévision."
+      },
+      "iptv-in-french": {
+        "title": "IPTV pour les francophones : Meilleures chaînes et services",
+        "excerpt": "Découvrez les meilleurs services et chaînes IPTV pour les utilisateurs francophones. Explorez les chaînes françaises populaires comme TF1, Canal+, et M6."
+      },
+      "iptv-in-spain": {
+        "title": "IPTV en Espagne : Meilleures chaînes et services",
+        "excerpt": "Découvrez les meilleurs services et chaînes IPTV pour les utilisateurs hispanophones. Explorez les chaînes espagnoles populaires comme RTVE, Antena 3 et Movistar+."
+      },
+      "iptv-sports": {
+        "title": "Comment regarder des sports en direct sur IPTV",
+        "excerpt": "Les fans de sport peuvent profiter des matchs en direct, des événements PPV et du contenu exclusif sur IPTV. Apprenez comment diffuser facilement vos chaînes sportives préférées."
+      },
+      "iptv-movies": {
+        "title": "Meilleures chaînes IPTV pour les films et les séries TV",
+        "excerpt": "Explorez les meilleures chaînes IPTV pour les films, les séries TV et le contenu exclusif. Découvrez pourquoi l'IPTV est le choix ultime pour les amateurs de divertissement."
+      },
+      "best-iptv-providers": {
+        "title": "Comment choisir le meilleur fournisseur IPTV",
+        "excerpt": "Apprenez comment sélectionner un fournisseur IPTV fiable. Découvrez les critères essentiels à considérer, tels que la variété des chaînes, la qualité de diffusion et les prix."
+      },
+      "iptv-pricing": {
+        "title": "Comment résoudre les problèmes courants de l'IPTV",
+        "excerpt": "Résolvez les problèmes courants de l'IPTV tels que le buffering, les coupures et les problèmes de connectivité. Apprenez comment optimiser votre expérience de diffusion."
+      },
+      "iptv-best-channels": {
+        "title": "Top 10 des applications IPTV pour 2024",
+        "excerpt": "Découvrez les meilleures applications IPTV pour la diffusion sur les Smart TVs, Firestick, Android, iOS et plus encore. Trouvez l'application idéale pour vos besoins."
+      },
+      "is-iptv-good": {
+        "title": "L'IPTV est-elle légale ? Tout ce que vous devez savoir",
+        "excerpt": "Comprenez la légalité des services IPTV. Apprenez la différence entre IPTV légale et illégale et comment rester en sécurité lors de vos diffusions."
+      },
+      "what-do-i-need-to-use-iptv": {
+        "title": "Comment configurer et utiliser l'IPTV sur n'importe quel appareil",
+        "excerpt": "Un guide étape par étape sur la façon d'installer et d'utiliser l'IPTV sur Smart TVs, Firestick, Android, iOS et autres appareils pour une diffusion fluide."
+      }
+    }
+  },
+  "subscriptionsApp": {
+    "sectionTitle": "Applications d'Abonnement",
+    "title": "NOS APPLICATIONS",
+    "add_to_cart": "Ajouter au Panier",
+    "subscribe_now": "S'abonner Maintenant"
+  },
+  "whatsappbtn": {
+    "title": "Passer la commande via WhatsApp"
+  }
+}
