@@ -4,6 +4,6 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 RUN npm run build
-EXPOSE 5000
+EXPOSE 6000
 ENV NODE_ENV=production
 CMD ["npm", "start"]
