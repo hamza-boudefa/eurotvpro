@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /orders
+
+# Host
+Host: https://www.eurotvpro.com
+
+# Sitemaps
+Sitemap: https://www.eurotvpro.com/sitemap.xml
