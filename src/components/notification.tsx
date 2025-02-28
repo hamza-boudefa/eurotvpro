@@ -1,6 +1,6 @@
 "use client"
 
-import { useParams } from "next/navigation"
+import { useParams, usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 import { CircleX } from "lucide-react"
 import { useTranslations } from "next-intl"
@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl"
 export default function NotificationSnackbar() {
   const params = useParams<{ locale: string }>()
   const t = useTranslations("NotificationSnackbar")
-
+  const pathname = usePathname()
   const notifications = [
     { id: 1, user: "John Doe", plan: t("plans.sixMonth"), time: t("timeAgo.minutes", { count: 9 }) },
     { id: 2, user: "Sarah Lee", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 15 }) },
@@ -31,19 +31,22 @@ export default function NotificationSnackbar() {
       setShow(true)
       setCurrentNotification(notifications[index])
 
-      setTimeout(() => setShow(false), 6000) // Hide after 6 sec
+      setTimeout(() => setShow(false), 6000) 
 
       setIndex((prevIndex) => (prevIndex + 1) % notifications.length)
-    }, 10000) // Show every 10 seconds
+    }, 10000) 
 
     return () => clearInterval(interval)
-  }, [index, notifications.length, notifications[index]]) // Added notifications.length and notifications[index] to dependency array
+  }, [index, notifications.length, notifications[index]]) 
 
   return (
     <div
-      className={`z-50 fixed top-16 bg-white text-black px-6 py-3 rounded-lg shadow-lg transition-all duration-500 w-80 flex items-center gap-3 
-        ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"} ${params.locale === "ar" ? "right-5" : "left-5"}`}
-    >
+    style={{ display: pathname.includes("orders") ? "none" : "" }}
+    className={`z-50 fixed top-16 bg-white text-black px-6 py-3 rounded-lg shadow-lg transition-all duration-500 w-80 flex items-center gap-3 
+      ${show ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-5 pointer-events-none"} 
+      ${params.locale === "ar" ? "right-5" : "left-5"}`}
+  >
+  
       <CircleX
       
         onClick={() => setShow(false)}

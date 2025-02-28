@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import { motion } from "framer-motion"
 import { ChevronDown, ChevronUp, ChevronLeft, ChevronRight, RefreshCcw } from "lucide-react"
-
+import debounce from 'lodash.debounce';
 interface OrderItem {
   duration: string
   price: string
@@ -52,13 +52,13 @@ export default function Page() {
   const fetchOrders = async () => {
     setLoading(true)
     try {
-      const response = await axios.get(`http://localhost:5000/admin/orders`, {
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_APIURL}/admin/orders`, {
         params: {
           page: currentPage,
           filter,
           fullName: fullNameFilter,
           status: statusFilter,
-          confirmationDate: confirmationDateFilter,
+          // confirmationDate: confirmationDateFilter,
           email: emailFilter,
           phoneNumber: phoneNumberFilter,
         },
@@ -80,7 +80,7 @@ export default function Page() {
   // Update order status function
   const updateOrderStatus = async (orderId: string, status: "on hold" | "confirmed") => {
     try {
-      const response = await axios.put(`http://localhost:5000/api/updateOrderStatus/${orderId}`, {
+      const response = await axios.put(`${process.env.NEXT_PUBLIC_APIURL}/api/updateOrderStatus/${orderId}`, {
         status,
       })
       console.log("Order status updated:", response.data)
@@ -118,7 +118,34 @@ export default function Page() {
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString()
   }
-
+  const debouncedSetFullNameFilter = debounce((value) => {
+    setFullNameFilter(value);
+  }, 1000);
+  
+  // const debouncedSetStatusFilter = debounce((value) => {
+  //   setStatusFilter(value);
+  // }, 1000);
+  
+  // const debouncedSetConfirmationDateFilter = debounce((value) => {
+  //   setConfirmationDateFilter(value);
+  // }, 300);
+  
+  const debouncedSetEmailFilter = debounce((value) => {
+    setEmailFilter(value);
+  }, 1000);
+  
+  const debouncedSetPhoneNumberFilter = debounce((value) => {
+    setPhoneNumberFilter(value);
+  }, 1000);
+  useEffect(() => {
+    return () => {
+      debouncedSetFullNameFilter.cancel();
+      // debouncedSetStatusFilter.cancel();
+      // debouncedSetConfirmationDateFilter.cancel();
+      debouncedSetEmailFilter.cancel();
+      debouncedSetPhoneNumberFilter.cancel();
+    };
+  }, []);
   return (
     <div className="admin-orders bg-black text-white min-h-screen py-8 px-4 sm:px-6 lg:px-8 z-[9999999]">
       <h1 className="text-3xl font-bold mb-6 text-gray-100">Admin - Orders</h1>
@@ -153,41 +180,41 @@ export default function Page() {
 
           {/* New filters */}
           <input
-            type="text"
-            placeholder="Full Name"
-            value={fullNameFilter}
-            onChange={(e) => setFullNameFilter(e.target.value)}
-            className="px-3 py-1 rounded bg-gray-700 text-white"
-          />
-          <select
-            value={statusFilter}
-            onChange={(e) => setStatusFilter(e.target.value)}
-            className="px-3 py-1 rounded bg-gray-700 text-white"
-          >
-            <option value="">All Statuses</option>
-            <option value="on hold">On Hold</option>
-            <option value="confirmed">Confirmed</option>
-          </select>
-          <input
-            type="date"
-            value={confirmationDateFilter}
-            onChange={(e) => setConfirmationDateFilter(e.target.value)}
-            className="px-3 py-1 rounded bg-gray-700 text-white"
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            value={emailFilter}
-            onChange={(e) => setEmailFilter(e.target.value)}
-            className="px-3 py-1 rounded bg-gray-700 text-white"
-          />
-          <input
-            type="text"
-            placeholder="Phone Number"
-            value={phoneNumberFilter}
-            onChange={(e) => setPhoneNumberFilter(e.target.value)}
-            className="px-3 py-1 rounded bg-gray-700 text-white"
-          />
+  type="text"
+  placeholder="Full Name"
+  defaultValue={fullNameFilter}
+  onChange={(e) => debouncedSetFullNameFilter(e.target.value)}
+  className="px-3 py-1 rounded bg-gray-700 text-white"
+/>
+<select
+  defaultValue={statusFilter}
+  onChange={(e) => setStatusFilter(e.target.value)}
+  className="px-3 py-1 rounded bg-gray-700 text-white"
+>
+  <option value="">All Statuses</option>
+  <option value="on hold">On Hold</option>
+  <option value="confirmed">Confirmed</option>
+</select>
+{/* <input
+  type="date"
+  defaultValue={confirmationDateFilter}
+  onChange={(e) => debouncedSetConfirmationDateFilter(e.target.value)}
+  className="px-3 py-1 rounded bg-gray-700 text-white"
+/> */}
+<input
+  type="text"
+  placeholder="Email"
+  defaultValue={emailFilter}
+  onChange={(e) => debouncedSetEmailFilter(e.target.value)}
+  className="px-3 py-1 rounded bg-gray-700 text-white"
+/>
+<input
+  type="text"
+  placeholder="Phone Number"
+  defaultValue={phoneNumberFilter}
+  onChange={(e) => debouncedSetPhoneNumberFilter(e.target.value)}
+  className="px-3 py-1 rounded bg-gray-700 text-white"
+/>
           <button
             onClick={() => {
               setFullNameFilter("")
@@ -218,7 +245,7 @@ export default function Page() {
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <span>
+          <span className="whitespace-nowrap">
             {currentPage} / {totalPages}
           </span>
           <button

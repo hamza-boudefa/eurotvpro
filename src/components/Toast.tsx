@@ -25,7 +25,7 @@ export default function Toast({ message, type, onClose }: ToastProps) {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 p-4 rounded-md shadow-lg flex items-center justify-between ${
+      className={` z-50 fixed bottom-16 right-4 p-4 rounded-md shadow-lg flex items-center justify-between ${
         type === "success" ? "bg-green-500" : "bg-red-500"
       }`}
     >

@@ -86,7 +86,7 @@ export default function HeroSection() {
         </div>
         <div className="flex items-center gap-2 mb-6">
           <span className="text-white text-lg md:text-xl">{t("HeroSection.startingFrom")}</span>
-          <span className="text-white text-2xl md:text-4xl font-bold">9.99€</span>
+          <span className="text-white text-2xl md:text-4xl font-bold">4.99€</span>
           <span className="text-white text-lg md:text-xl">/ {t("HeroSection.month")}</span>
         </div>
         <button 

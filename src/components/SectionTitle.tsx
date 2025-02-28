@@ -22,7 +22,7 @@ export const SectionTitle = ({ translation }: ISectionTitleProps) => {
   return (
     <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-16">
       <div className={`flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 ${params.locale !== 'ar' ? poppins.className : ''}`}>
-        <span className={`text-6xl sm:text-8xl stroke-text mb-8 ${params.locale === 'ar' ? 'text-white' : 'text-stroke-custom text-transparent text-black'}`}>
+        <span className={`text-5xl sm:text-8xl stroke-text mb-8 ${params.locale === 'ar' ? 'text-white' : 'text-stroke-custom text-transparent text-black'}`}>
           {t('title')}
         </span>
       </div>

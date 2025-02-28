@@ -467,7 +467,7 @@ export default function CartPage() {
     if (validateForm()) {
       try {
         setLoading(true)
-        const response = await fetch('http://localhost:5000/api/placeOrder', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/placeOrder`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
