@@ -14,7 +14,7 @@ const paymentMethods = [
   { name: "Bitcoin", src: "/images/Bitcoin.svg" },
   { name: "Western union", src: "/images/Western.svg" },
   { name: "American Express", src: "/images/Amex.svg" },
-  { name: "Moneygram", src: "/images/Moneygram.svg" },
+  { name: "Moneygram", src: "/images/MoneyGram.svg" },
 ]
 
 export default function Footer() {
