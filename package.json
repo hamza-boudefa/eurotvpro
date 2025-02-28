@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 6000",
+    "start": "next start -p 5001",
     "lint": "next lint",
     "lint:fix": "eslint . --fix",
     "check-types": "tsc --project tsconfig.json --pretty --noEmit",
