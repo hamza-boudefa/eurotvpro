@@ -207,7 +207,7 @@
           "title": "Kontaktinformationen",
           "description": "Sagen Sie etwas, um einen Live-Chat zu starten!",
           "phone": "+33 7 45 022 308",
-          "email": "demo@gmail.com"
+          "email": "contact@eurotvpro.com"
         }
       },
       "HowItWorks": {
@@ -357,7 +357,7 @@
   },
   "contact_info": {
     "phone": "+33 7 45 022 308",
-    "email": "Email@gmail.com",
+    "email": "contact@eurotvpro.com",
     "address": "20 Av. de Wagram, 75008 Paris, Frankreich"
   },
   "copyright": "Urheberrecht © {year}. Alle Rechte vorbehalten."
