@@ -94,6 +94,7 @@
   },
   "plans": {
     "title": "NUESTRAS SUSCRIPCIONES",
+    "test":"¡Experiméntalo de primera mano! Solicita hoy una suscripción de demostración de 24 horas",
     "add_to_cart": "Añadir al carrito",
     "place_order": "Realizar pedido",
     "durations": {

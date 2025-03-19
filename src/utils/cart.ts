@@ -1,6 +1,7 @@
 // cart.ts
 
 export interface Plan {
+  quantity: number;
   duration: string;
   price: string;
   features: string[];
@@ -12,7 +13,7 @@ export function getCartItems(): Plan[] {
   return savedCart ? (JSON.parse(savedCart) as unknown as Plan[]) : [];
 }
 
-export function addToCart(plan: Plan): void {
+export function addToCart(plan: { price: number; promoPrice: number | null; isBestValue: boolean; PlanTranslations: { duration: string; features: string; }[]; }): void {
   const currentCart = getCartItems();
   const newCart = [...currentCart, plan];
   localStorage.setItem('cart', JSON.stringify(newCart));

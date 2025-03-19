@@ -36,3 +36,13 @@ body {
 
 
 
+.custom-strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: rotate(-20deg);
+}

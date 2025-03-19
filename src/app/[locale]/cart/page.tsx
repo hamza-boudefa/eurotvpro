@@ -14,9 +14,15 @@ import Spinner from "../../../components/Spinner"
 
 
 interface CartItem {
-  duration: string
-  price: string
-  quantity: number
+  id?: number; // For apps
+  name?: string; // For apps
+  duration?: string; // For plans
+  price: string;
+  quantity: number;
+  promo?: string; // For apps
+  image?: string; // For apps
+  features?: string[]; // For plans
+  isBestValue?: boolean; // For plans
 }
 
 interface PaymentMethod {
@@ -309,26 +315,35 @@ export default function CartPage() {
   const [toastType, setToastType] = useState<"success" | "error">("success")
 
   useEffect(() => {
-    const fetchedItems = getCartItems()
-    const itemMap = fetchedItems.reduce((acc: any, item: { duration: string; price: string }) => {
-      if (acc[item.duration]) {
-        acc[item.duration].quantity += 1
+    const fetchedItems = getCartItems();
+    console.log(fetchedItems);
+  
+    const itemMap = fetchedItems.reduce((acc: any, item: any) => {
+      // Use `duration` for plans and `id` for apps
+      const key = item.duration || item.id;
+  
+      if (acc[key]) {
+        acc[key].quantity += 1; // Increment quantity if the item already exists
       } else {
-        acc[item.duration] = { ...item, quantity: 1 }
+        acc[key] = { ...item, quantity: 1 }; // Add the item with quantity 1 if it doesn't exist
       }
-      return acc
-    }, {})
-
-    const itemList: CartItem[] = Object.values(itemMap)
-    setItems(itemList)
-
+  
+      return acc;
+    }, {});
+  
+    const itemList: CartItem[] = Object.values(itemMap);
+    setItems(itemList);
+    console.log(itemList);
+  
     const totalAmount = itemList.reduce((sum: number, item: CartItem) => {
-      const price = Number.parseFloat(item.price.replace("€", ""))
-      return sum + price * item.quantity
-    }, 0)
-
-    setTotal(totalAmount)
-  }, [])
+      // Parse the price correctly (remove "€" if present)
+      const price = typeof item.price === 'string' ? Number.parseFloat(item.price.replace("€", "")) : item.price;
+      return sum + price * item.quantity;
+    }, 0);
+  
+    setTotal(totalAmount);
+    console.log(totalAmount);
+  }, []);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -343,13 +358,13 @@ export default function CartPage() {
     }
   }, [])
 
-  const handleRemoveFromCart = (duration: string) => {
+  const handleRemoveFromCart = (identifier: any) => {
     // Remove one instance of the item from the cart
-    removeFromCart(duration);
+    removeFromCart(identifier);
   
     // Update the items state
     const updatedItems = items.map((item) => {
-      if (item.duration === duration) {
+      if (item.duration === identifier || item.id === identifier) {
         return { ...item, quantity: item.quantity - 1 }; // Decrement the quantity by 1
       }
       return item;
@@ -359,7 +374,7 @@ export default function CartPage() {
   
     // Recalculate the total
     const updatedTotal = updatedItems.reduce((sum: number, item: CartItem) => {
-      const price = Number.parseFloat(item.price.replace("€", ""));
+      const price = typeof item.price === 'string' ? Number.parseFloat(item.price.replace("€", "")) : item.price;
       return sum + price * item.quantity;
     }, 0);
   
@@ -369,7 +384,7 @@ export default function CartPage() {
     const totalItemsCount = updatedItems.reduce((sum, item) => sum + item.quantity, 0);
     setSubscriptionCount(totalItemsCount);
   };
-  const toggleDropdown = () => {
+  const toggleDropdown = () => {  
     if (!isDropdownOpen) {
       const buttonRect = buttonRef.current?.getBoundingClientRect()
       const windowHeight = window.innerHeight
@@ -467,7 +482,7 @@ export default function CartPage() {
     if (validateForm()) {
       try {
         setLoading(true)
-        const response = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/placeOrder`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/orders/placeOrder`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -503,7 +518,7 @@ export default function CartPage() {
       }
     }
   }
-
+console.log(total)
   return (
     <>
       <div className="min-h-screen bg-black text-white py-16 px-4">
@@ -659,18 +674,20 @@ export default function CartPage() {
                   </div>
                 ))}
               </div> */}
-              <div className="space-y-4 mb-6">
+<div className="space-y-4 mb-6">
   {items.map((item, index) => (
     <div key={index} className="flex justify-between items-center">
       <div>
         <h3 className="font-bold">
-          {/* Check if duration is a translation key or plain string */}
-          {item.duration.startsWith("durations.") ? t(item.duration) : item.duration} {item.quantity > 1 && `x${item.quantity}`}
+          {item.name ? item.name : item.duration } {/* Display name for apps or duration for plans */}
+          {item.quantity > 1 && `x${item.quantity}`} {/* Display quantity if greater than 1 */}
         </h3>
-        <p className="text-sm text-gray-400">{item.price}</p>
+        <p className="text-sm text-gray-400">
+          {typeof item.price === 'string' ? item.price : `${item.price}€`} {/* Display price with "€" if it's a number */}
+        </p>
       </div>
       <button
-        onClick={() => handleRemoveFromCart(item.duration)}
+        onClick={() => handleRemoveFromCart(item.duration || item.id || '')} // Remove by duration or id
         className="text-red-500 hover:text-red-600"
       >
         <Trash2 size={20} />
