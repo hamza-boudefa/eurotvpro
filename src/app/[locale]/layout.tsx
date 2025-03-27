@@ -3,6 +3,7 @@ import Loading from '@/app/[locale]/loading';
 import { routing } from '@/i18n/i18nNavigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import Script from 'next/script';
 // import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import React, { Suspense } from 'react';
@@ -65,6 +66,15 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} dir={direction} >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKW20FH917"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PKW20FH917');
+</script>
       </head>
       <body className={fontClass}>
         <NextIntlClientProvider messages={messages}>
