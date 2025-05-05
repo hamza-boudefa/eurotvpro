@@ -13,7 +13,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: '700' });
 
 const images = [
   "/images/banner1.webp",
-  "/images/banner2.webp", 
+ 
   "/images/banner3.webp",
 ];
 
