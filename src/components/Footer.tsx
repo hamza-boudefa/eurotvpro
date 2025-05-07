@@ -5,16 +5,9 @@ import { Mail, Phone, MapPin } from "lucide-react"
 import { useLocale, useTranslations } from "next-intl"
 import { usePathname } from "next/navigation"
 const paymentMethods = [
-  { name: "Visa", src: "/images/Visa.svg" },
+ 
   { name: "Google Pay", src: "/images/GooglePay.svg" },
-  { name: "Mastercard", src: "/images/Mastercard.svg" },
-  { name: "Maestro", src: "/images/Maestro.svg" },
-  { name: "PayPal", src: "/images/PayPal.svg" },
-  { name: "Apple Pay", src: "/images/ApplePay.svg" },
-  { name: "Bitcoin", src: "/images/Bitcoin.svg" },
-  { name: "Western union", src: "/images/Western.svg" },
-  { name: "American Express", src: "/images/Amex.svg" },
-  { name: "Moneygram", src: "/images/MoneyGram.svg" },
+  
 ]
 
 export default function Footer() {
