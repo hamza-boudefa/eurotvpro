@@ -32,7 +32,7 @@ export function clearCart(): void {
 export function getCartTotal(): number {
   const items = getCartItems();
   return items.reduce((sum, item) => {
-    const price = parseFloat(item.price.replace('€', ''));
+    const price = parseFloat(item.price.replace('TND', ''));
     return sum + price;
   }, 0);
 }
