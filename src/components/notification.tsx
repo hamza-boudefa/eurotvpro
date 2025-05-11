@@ -10,15 +10,15 @@ export default function NotificationSnackbar() {
   const t = useTranslations("NotificationSnackbar")
   const pathname = usePathname()
   const notifications = [
-    { id: 1, user: "John Doe", plan: t("plans.sixMonth"), time: t("timeAgo.minutes", { count: 9 }) },
-    { id: 2, user: "Sarah Lee", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 15 }) },
+    { id: 1, user: "ahmed", plan: t("plans.sixMonth"), time: t("timeAgo.minutes", { count: 9 }) },
+    { id: 2, user: "omar", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 15 }) },
     { id: 3, user: "Ali Ahmed", plan: t("plans.threeMonth"), time: t("timeAgo.minutes", { count: 5 }) },
-    { id: 4, user: "Maria Gonzalez", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 20 }) },
-    { id: 5, user: "Chen Wei", plan: t("plans.sixMonth"), time: t("timeAgo.minutes", { count: 30 }) },
-    { id: 6, user: "Yuki Tanaka", plan: t("plans.threeMonth"), time: t("timeAgo.minutes", { count: 40 }) },
+    { id: 4, user: "achref", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 20 }) },
+    { id: 5, user: "dalyx", plan: t("plans.sixMonth"), time: t("timeAgo.minutes", { count: 30 }) },
+    { id: 6, user: "bilel", plan: t("plans.threeMonth"), time: t("timeAgo.minutes", { count: 40 }) },
     { id: 7, user: "Omar Hassan", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 50 }) },
-    { id: 8, user: "Elena Petrova", plan: t("plans.sixMonth"), time: t("timeAgo.hours", { count: 1 }) },
-    { id: 9, user: "Raj Patel", plan: t("plans.threeMonth"), time: t("timeAgo.minutes", { count: 10 }) },
+    { id: 8, user: "sawsen", plan: t("plans.sixMonth"), time: t("timeAgo.hours", { count: 1 }) },
+    { id: 9, user: "moez", plan: t("plans.threeMonth"), time: t("timeAgo.minutes", { count: 10 }) },
     { id: 10, user: "Fatima Al-Farsi", plan: t("plans.oneYear"), time: t("timeAgo.minutes", { count: 20 }) },
   ]
 

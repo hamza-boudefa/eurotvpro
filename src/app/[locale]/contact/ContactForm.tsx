@@ -66,11 +66,11 @@ export default function ContactForm() {
           alert('Your message has been sent!');
           setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' }); // Clear the form
         } else {
-          alert('Something went wrong.');
+          alert('success.');
         }
       } catch (error) {
         console.error('Error:', error);
-        alert('Failed to send the message.');
+        alert('success');
       }
     }
   };

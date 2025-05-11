@@ -52,16 +52,13 @@ interface FormErrors {
 }
 
 const paymentMethods: PaymentMethod[] = [
-  { name: "Visa", src: "/images/Visa.svg" },
-  { name: "Google Pay", src: "/images/GooglePay.svg" },
-  { name: "Mastercard", src: "/images/Mastercard.svg" },
-  { name: "Maestro", src: "/images/Maestro.svg" },
-  { name: "PayPal", src: "/images/PayPal.svg" },
-  { name: "Apple Pay", src: "/images/ApplePay.svg" },
-  { name: "Bitcoin", src: "/images/Bitcoin.svg" },
-  { name: "Western union", src: "/images/Western.svg" },
-  { name: "American Express", src: "/images/Amex.svg" },
-  { name: "Moneygram", src: "/images/Moneygram.svg" },
+  { name: "D17", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_b56d715d.jpg" },
+  { name: "e-dinar", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_b475de3f.jpg" },
+  { name: "binance", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_0f2290ce.jpg" },
+  { name: "virement", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_2f8075ec.jpg" },
+  { name: "western", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_0bd91cfa.jpg" },
+  { name: "", src: "/images/WhatsApp Image 2025-05-02 at 02.46.13_98299d7d.jpg" },
+
 ]
 
 const countries: Country[] = [

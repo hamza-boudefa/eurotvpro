@@ -192,7 +192,7 @@
     "contact_info": {
       "phone": "+216 55 899 901",
       "email": "contact@eurotvpro.com",
-      "address": "tunis,marsa"
+      "address": " résidence pixel route de la marsa 87"
     },
     "copyright": "Copyright © {year}. Tous droits réservés."
   },
@@ -254,8 +254,8 @@
     "paymentMethod": {
       "title": "Méthode de paiement",
       "select": "Sélectionnez un mode de paiement",
-      "card": "Carte de crédit",
-      "paypal": "PayPal"
+      "card": "D17",
+      "paypal": "Virement"
     },
     "orderDetails": {
       "title": "Détails de la commande",
@@ -363,6 +363,6 @@
     "subscribe_now": "S'abonner Maintenant"
   },
   "whatsappbtn": {
-    "title": ""
+    "title": "Acheter"
   }
 }
