@@ -58,7 +58,7 @@
       "offer": "Vous offrez une",
       "entertainment": "Expérience",
       "experience": "Exceptionnelle",
-      "startingFrom": "À partir de",
+      "startingFrom": "À partir de ",
       "month": "par mois",
       "shopNow": "Acheter maintenant"
     },
@@ -190,9 +190,9 @@
       "cart": "Panier"
     },
     "contact_info": {
-      "phone": "+33 7 45 022 308",
+      "phone": "+216 55 899 901",
       "email": "contact@eurotvpro.com",
-      "address": "20 Av. de Wagram, 75008 Paris, France"
+      "address": "tunis,marsa"
     },
     "copyright": "Copyright © {year}. Tous droits réservés."
   },
@@ -217,7 +217,7 @@
     "contactInfo": {
       "title": "Informations de contact",
       "description": "Dites quelque chose pour commencer un chat en direct !",
-      "phone": "+33 7 45 022 308",
+      "phone": "+216 55 899 901",
       "email": "contact@eurotvpro.com"
     }
   },
@@ -363,6 +363,6 @@
     "subscribe_now": "S'abonner Maintenant"
   },
   "whatsappbtn": {
-    "title": "Passer la commande via WhatsApp"
+    "title": ""
   }
 }

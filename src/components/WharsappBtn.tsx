@@ -6,7 +6,7 @@ export default function WharsappBtn() {
     const t = useTranslations("whatsappbtn")
   
   const openWhatsApp = () => {
-    window.open("https://wa.me/+33745022308", "_blank")
+    window.open("https://wa.me/+216 55 899 901", "_blank")
   }
 
   return (

@@ -13,11 +13,7 @@ type WhatsAppScreenshot = {
 }
 
 const whatsAppScreenshots: WhatsAppScreenshot[] = [
-  { id: "1", imageUrl: "/images/cap1_Plan de travail 1.jpg" },
-  { id: "2", imageUrl: "/images/cap2_Plan de travail 1.jpg" },
-  { id: "3", imageUrl: "/images/cap3_Plan de travail 1.jpg" },
-  { id: "4", imageUrl: "/images/cap4_Plan de travail 1.jpg" },
-  { id: "5", imageUrl: "/images/cap5_Plan de travail 1.jpg" },
+  
 ]
 
 const WhatsAppCarousel: React.FC = () => {

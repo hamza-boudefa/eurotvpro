@@ -78,8 +78,8 @@ console.log(plans)
   // Map fetched plans to the expected structure
   const mappedPlans = plans.map((plan) => ({
     duration: plan.PlanTranslations[0]?.duration || 'Unknown Duration', // Use the first translation's duration
-    price: `${plan.price}€`, // Format price
-    promoPrice:`${plan.promoPrice}€`,
+    price: `${plan.price}TND`, // Format price
+    promoPrice:`${plan.promoPrice}TND`,
     features: plan.PlanTranslations[0]?.features
       ? (plan.PlanTranslations[0].features) // Parse features from JSON
       : ['No features available'], // Fallback if no features

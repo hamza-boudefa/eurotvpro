@@ -1,4 +1,4 @@
-// File: C:\Users\crazy\eurotvpro\src\app\[locale]\pricing\page.tsx
+// File: C:\Users\OMAR\Desktop\euro\eurotvpro\src\app\[locale]\pricing\page.tsx
 import * as entry from '../../../../../src/app/[locale]/pricing/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

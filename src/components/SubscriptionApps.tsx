@@ -105,10 +105,10 @@ export default function SubscriptionApps() {
   {subscription.promo ? (
     <>
       <span className="relative inline-block text-[23px] text-gray-500 custom-strike mr-2">{subscription.price}€</span>
-      <span className="text-white">{subscription.promo}€</span>
+      <span className="text-white">{subscription.promo}TND</span>
     </>
   ) : (
-    <span>{subscription.price}€</span>
+    <span>{subscription.price}TND</span>
   )}
 </p>
                   <div className="flex flex-col gap-2 mt-auto">
