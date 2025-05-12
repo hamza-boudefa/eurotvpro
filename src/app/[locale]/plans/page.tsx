@@ -49,7 +49,7 @@ export default function PlansPage() {
   const fetchPlans = async () => {
     try {
       setLoading(true)
-      const response = await fetch("http://localhost:5000/admin/plans/getAllPlans")
+      const response = await fetch("https://eurotvpro-eurotvpro-back.jvskd1.easypanel.host/admin/plans/getAllPlans")
       if (!response.ok) throw new Error("Failed to fetch plans")
       const data:any = await response.json()
       setPlans(data)
