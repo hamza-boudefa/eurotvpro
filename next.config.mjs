@@ -28,6 +28,11 @@ const nextConfig = {
       hostname:"localhost",
       pathname:'**'
     } 
+     ,{
+      protocol:'https',
+      hostname:"eurotvpro-eurotvpro-back.jvskd1.easypanel.host",
+      pathname:'**'
+    } 
   ],
   },
 };
