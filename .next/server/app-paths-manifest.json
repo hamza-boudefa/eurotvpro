@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/[locale]/about/page": "app/[locale]/about/page.js",
-  "/[locale]/cart/page": "app/[locale]/cart/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
   "/[locale]/blog/page": "app/[locale]/blog/page.js",
+  "/[locale]/cart/page": "app/[locale]/cart/page.js",
   "/[locale]/contact/page": "app/[locale]/contact/page.js",
   "/[locale]/orders/page": "app/[locale]/orders/page.js",
   "/[locale]/plans/[id]/page": "app/[locale]/plans/[id]/page.js",
-  "/[locale]/page": "app/[locale]/page.js",
   "/[locale]/plans/page": "app/[locale]/plans/page.js",
   "/[locale]/pricing/page": "app/[locale]/pricing/page.js",
   "/[locale]/blog/[slug]/page": "app/[locale]/blog/[slug]/page.js"
