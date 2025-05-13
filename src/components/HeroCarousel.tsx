@@ -13,7 +13,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: '700' });
 
 const images = [
   "/images/banner1.webp",
- 
+ "/images/WhatsApp Image 2025-05-02 at 02.40.19_3d45926b.jpg",
   "/images/banner3.webp",
 ];
 

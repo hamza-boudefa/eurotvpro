@@ -4,7 +4,6 @@ import Image from "next/image";
 import { addToCart, getCartItems } from "@/utils/cart";
 import { useSubscription } from "@/contexts/subscription-context";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { SectionTitle } from "./SectionTitle";
 import axios from "axios";
@@ -28,7 +27,7 @@ export default function SubscriptionApps() {
   const { setSubscriptionCount } = useSubscription();
   const [subscriptions, setSubscriptions] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const router = useRouter();
+  
 
   // 🔸 Fetch subscriptions from API
   useEffect(() => {
@@ -69,10 +68,10 @@ export default function SubscriptionApps() {
     setSubscriptionCount(totalItemsCount);
   };
 
-  const goTo = (subscription: Subscription) => {
-    handleSubscriptionChange(subscription);
-    router.push("/cart");
-  };
+  const goTo = () => {
+  window.location.href = "https://api.whatsapp.com/send/?phone=%2B21654239788&text&type=phone_number&app_absent=0";
+};
+
 
   return (
     <section className="bg-black text-white py-16 px-4 md:py-24">
@@ -119,11 +118,12 @@ export default function SubscriptionApps() {
                       {t("add_to_cart")}
                     </button>
                     <button
-                      onClick={() => goTo(subscription)}
-                      className="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black transition-colors"
-                    >
-                      {t("subscribe_now")}
-                    </button>
+  onClick={() => goTo()}
+  className="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black transition-colors"
+>
+  {t("subscribe_now")}
+</button>
+
                   </div>
                 </div>
               ))}
