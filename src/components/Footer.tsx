@@ -6,11 +6,11 @@ import { useLocale, useTranslations } from "next-intl"
 import { usePathname } from "next/navigation"
 const paymentMethods = [
    { name: "D17", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_b56d715d.jpg" },
-  { name: "e-dinar", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_b475de3f.jpg" },
+  { name: "e-dinar", src: "/images/Binance-Vertical2-Dark-Background-Logo.wine.svg" },
   { name: "binance", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_0f2290ce.jpg" },
   { name: "virement", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_2f8075ec.jpg" },
-  { name: "western", src: "/images/WhatsApp Image 2025-05-02 at 02.46.12_0bd91cfa.jpg" },
-  { name: "telegram", src: "/images/WhatsApp Image 2025-05-02 at 02.46.13_98299d7d.jpg" },
+  { name: "western", src: "/images/590x375-1692355608_6d65ed02d33f63d91ca8.png" },
+  { name: "moneygram", src: "/images/moneygram.png" },
 ]
 
 export default function Footer() {

@@ -198,9 +198,9 @@
       "cart": "Cart"
     },
     "contact_info": {
-      "phone": "+33 7 45 022 308",
+      "phone": "+216 54 239 788",
       "email": "contact@eurotvpro.com",
-      "address": "20 Av. de Wagram, 75008 Paris, France"
+      "address": "résidence pixel route de la marsa 87"
     },
     "copyright": "Copyright © {year}. All rights reserved."
   },
@@ -225,7 +225,7 @@
     "contactInfo": {
       "title": "Contact Information",
       "description": "Say something to start a live chat!",
-      "phone": "+33 7 45 022 308",
+      "phone": "+216 54 239 788",
       "email": "contact@eurotvpro.com"
     }
   },
